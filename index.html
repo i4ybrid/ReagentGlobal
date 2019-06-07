@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Reagent Global - Home</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8;" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Stylesheets -->
+    <link href="css/base.css" rel='stylesheet' type='text/css' />
+    <link href="css/navbar.css" rel='stylesheet' type='text/css' />
+    <link href="css/style.css" rel='stylesheet' type='text/css' />
+    <link href="css/homepage.css" rel='stylesheet' type='text/css' />
+    <!--// Stylesheets -->
+    <!--fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Candal|Montserrat|Yantramanav|Open+Sans&display=swap"
+        rel="stylesheet">
+    <!--//fonts-->
+</head>
+
+<body>
+    <div class="wrapper">
+        <nav class="nav">
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <div class="nav-logo">Reagent Global</div>
+            <div class="nav-menu">
+                <ul class="nav-links">
+                    <li class="active"><a href="">Home</a></li>
+                    <li><a href="listings.html">Listings</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <main class="content">
+            <div class="block parallax-block find-your-dream-home">
+                <div class="parallax-centered">
+                    <strong>Find Your Dream Home</strong>
+                    <br />
+                    <br />
+                    <br />
+                    <button class="home-accent-button" onclick="window.location.href='contact.html';">Contact
+                        Us</button>
+                </div>
+            </div>
+            <div class="block background-block our-mission">
+                <div class="card">
+                    <strong>MISSION</strong>
+                    <br />
+                    <br />
+                    <h2>The Ultimate Luxury Home Experience</h2>
+                    <br />
+                    Working with Reagent Global doesn't mean just another real estate interaction. We provide an
+                    experience you won't forget at a competitive price. Think of us as the wedding planners for your
+                    rental, home buying, or investment experience. We do all the work of researching the top providers
+                    for the service you request, and we create a package for you to
+                    <br />
+                    <br />
+                    <br />
+                    <button class="home-accent-button" onclick="window.location.href='services.html';">Services</button>
+                </div>
+            </div>
+            <div class="block">
+                <div class="spacer"></div>
+                <div class="centered-block">
+                    <strong>FULL SERVICE HOMES</strong>
+                    <br />
+                    <br />
+                    <h2>Have It Your Way Homes</h2>
+                    <br />
+                </div>
+                <div class="triple-grid">
+                    <div class="grid-card">
+                        <div class="card-img">
+                            <img src="img/stretch_limo.jpg" title="Limousine" />
+                        </div>
+                        <div class="card-text">
+                            <h3>Car Service</h3>
+                            We can arrange your car service from the airport, whether it's by black car or limo.
+                        </div>
+                    </div>
+                    <div class="grid-card">
+                        <div class="card-img">
+                            <img src="img/hotel_room.jpg" title="Bedroom" />
+                        </div>
+
+                        <div class="card-text">
+                            <h3>Fully Furnished</h3>
+                            YDI can furnish your home, so you don't have to worry about buying furniture and moving it
+                            into your new home.
+                        </div>
+                    </div>
+                    <div class="grid-card">
+                        <div class="card-img">
+                            <img src="img/accounting.jpg" title="Financing" />
+                        </div>
+                        <div class="card-text">
+                            <h3>Simple Finances</h3>
+                            We provide financial services to take care of your needs - including services like currency
+                            exchange and financing.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br />
+            <div class="block">
+                <div class="spacer"></div>
+                <div class="card">
+                    <strong>KEEP UP TO DATE</strong>
+                    <br />
+                    <br />
+                    <h2>Subscribe to Be Informed of New Listings</h2>
+                    <br />
+                    <form class="subscribe-form" action="/subscribemail.html" method="post">
+                        <!--TODO : implement e-mail subscription-->
+                        Subscribe to our newletter to get the latest updates on the new listings, and keep updates on
+                        anything new. Plenty of other good information will be shared periodically with you. Unsubscribe
+                        at any time.
+                        <br />
+                        <br />
+                        <label>E-Mail:</label><input id="email" name="email" placeholder="user.name@email.com" />
+                        <br />
+                        <div class="subscribe-agree">By clicking Subscribe, you agree to receive promotional e-mails
+                        </div>
+                        <br />
+                        <button class="home-accent-button" type="submit" value="Subscribe to Newsletter">Subscribe to
+                            Newsletter</button>
+                    </form>
+                </div>
+            </div>
+        </main>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+    </div>
+    <script src="scripts/nav.js"></script>
+</body>
+
+</html>

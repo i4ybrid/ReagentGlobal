@@ -1,0 +1,226 @@
+.content {
+    color: var(--font-color);
+
+}
+h2 {
+    font-size: 3rem;
+}
+
+/* Block related */
+.block {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1rem;
+}
+.block strong {
+    letter-spacing: 0.5rem;
+    margin-right: -0.5rem;
+    color: darkred;
+}
+.block-centered {
+    height: inherit;
+    width: inherit;
+    text-align: center;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    vertical-align: middle;
+}
+.block-centered strong {
+    font-size: 4rem;
+    font-family: "Montserrat" !important;
+    font-weight: 900;
+    text-shadow: 2px 2px 5px grey;
+    color: black;
+}
+.parallax-block {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 50.00% 50.00%;
+}
+.parallax-block strong {
+    font-size: 3.6rem;
+    text-shadow: 2px 2px 5px  black;
+    margin: 0px;
+    color: white;
+}
+.parallax-centered {
+    height: 100%;
+    width: inherit;
+    text-align: center;
+}
+.centered-block {
+    box-sizing: border-box;
+    display: block;
+    height: inherit;
+    clear: both;
+    border-top: 10px;
+    border-color: transparent;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+    padding: 2rem;
+}
+.background-block {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Accent Colored Button */
+.home-accent-button {
+    background-color: var(--accent);
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.2rem;
+    margin-right: -0.2rem;
+    font-weight: 700;
+    width: auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    height: 3rem;
+    border: 0px;
+    text-transform: uppercase;
+}
+.home-accent-button:hover {
+    background-color: var(--accent-selected);
+    -webkit-transition: background-color ease 0.5s;
+    -ms-transition: background-color ease 0.5s;
+    transition: background-color ease 0.5s;
+    cursor: pointer;
+}
+
+/* Spacer */
+.spacer {
+    width: inherit;
+    height: 2rem;
+    background-color: transparent;
+}
+
+/* Cards */
+.card {
+    clear: both;
+    border-top: 10px;
+    border-color: transparent;
+    margin-left: 10%;
+    margin-right: 10%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    text-align: center;
+    vertical-align: middle;
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+.card-no-shadow {
+    clear: both;
+    border-top: 10px;
+    border-color: transparent;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+    vertical-align: middle;
+    padding: 0.5rem;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+.card-text {
+    font-family: "Open Sans";
+    padding: 1rem;
+    text-align: left;
+}
+.card-text h3 {
+    margin-bottom: 0.5rem;
+}
+
+/* Grid related */
+.quad-grid {
+    display: grid;
+    grid-gap: 1rem 0;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+.triple-grid {
+    display: grid;
+    grid-gap: 1rem 0;
+    grid-template-columns: 33% 33% 33%;
+}
+.double-grid {
+    display: grid;
+    grid-gap: 1rem 0;
+    grid-template-columns: 50% 50%;
+}
+.grid-card {
+    display: block;
+    clear: both;
+    border-top: 10px;
+    border-color: transparent;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    text-align: left;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+.grid-card img {
+    height: 35%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* Subscribe Form */
+.subscribe-form {
+    text-align: left;
+}
+.subscribe-form label {
+    font-size: 1.2rem;
+    padding-right: 1.5rem;
+}
+.subscribe-form input {
+    font-size: 1.2rem;
+    font-family: "Open Sans";
+    width: 40%;
+}
+.subscribe-form .subscribe-agree {
+    padding-top: 0.5rem;
+    font-size: 0.8rem;
+}
+
+@media screen and (max-width: 1024px) {
+    .quad-grid {
+        grid-template-columns: 50% 50%;
+    }
+}
+
+/* Changes based on size */
+@media screen and (max-width: 800px) {
+    .grid-card {
+        display: grid;
+        grid-template-columns: 40% 65%;
+    }
+    .grid-card img {
+        height: 100%;
+    }
+    .quad-grid {
+        grid-template-columns: 100%;
+    }
+    .triple-grid {
+        grid-template-columns: 100%;
+    }
+    .double-grid {
+        grid-template-columns: 100%;
+    }
+    .grid-card {
+        margin: 0.5rem;;
+    }
+    .subscribe-form input {
+        width: 65%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .grid-card img { 
+        height: 20rem;
+        width: 100%;
+    }
+    .grid-card {
+        display: block;
+    }
+    .subscribe-form input {
+        width: 55%;
+    }
+}

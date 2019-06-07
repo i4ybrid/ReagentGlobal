@@ -1,0 +1,79 @@
+/*
+Author: W3layout
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+*/
+
+/*--reset--*/
+
+:root {
+    --accent: #008449;
+    --border-color: #444;
+    --font-color: #fff;
+    --raised-color: #181818;
+    --inactive-color: #999;
+    --transparent-color: rgba(0, 0, 0, 0);
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 100%;
+    font-weight: 400;
+    color: var(--font-color);
+    background: url(../images/b.jpg)no-repeat center;
+    background-color: black;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    text-align: center;
+    overflow: hidden;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 20%;
+    background-color: var(--raised-color);
+    height: 100%;
+    position: fixed;
+}
+
+nav li {
+    padding: 0.3rem;
+}
+
+nav li.nav-header {
+    display: block;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--font-color);
+    line-height: 1rem;
+    padding: 0.9rem;
+    padding-bottom: 2rem;
+    text-align: left;
+}
+
+nav li.current-item {
+    border-left: 6px solid var(--accent);
+    border-right: 6px solid var(--transparent-color);
+    position: relative;
+}
+
+nav li.current-item, nav li.current-item a {
+    color: var(--font-color);
+}
+
+nav li a {
+    display: block;
+    color: var(--inactive-color);
+    padding: 8px 16px;
+    text-decoration: none;
+}
+nav li a:hover {
+    color: var(--font-color);
+    transition: color ease 0.3s;
+}

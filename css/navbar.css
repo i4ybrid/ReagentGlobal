@@ -1,0 +1,114 @@
+/* Provide spacing for nav bar */
+.content {
+    color: var(--font-color);
+    padding-top: 8vh;
+}
+
+nav .burger {
+    display: none;
+}
+nav .burger div {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+nav {
+    display: flex;
+    background-color: var(--raised-color);
+    width: 100%;
+    min-height: 8vh;
+    position: fixed;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav .nav-logo {
+    display: flex;
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    text-align: left;
+    text-transform: uppercase;
+    -webkit-font-smoothing: antialiased;
+}
+
+nav .nav-links {
+    display: flex;
+}
+nav li {
+    float: left;
+    padding-left: 5px;
+    padding-top: 0.5rem;
+    padding-bottom: 0px;
+    margin-left: 1px;
+    margin-right: 1px;
+    list-style: none;
+}
+nav li a {
+    display: block;
+    color: var(--inactive-color);
+    padding: 10px 5px;
+    text-decoration: none;
+}
+nav li a:hover {
+    color: var(--accent);
+    transition: color ease 0.3s;
+    -webkit-transition: color ease 0.3s;
+    -ms-transition: color ease 0.3s;
+}
+nav li.active, nav li.active a {
+    color: var(--accent);
+}
+
+
+@media screen and (max-width: 800px) {
+    nav {
+        width: 100vw;
+    }
+
+    nav li {
+        float: left;
+        padding: 0;
+        margin: 0;
+    }
+
+    nav .active {
+        color: var(--accent);
+        border-top: 0px;
+        border-left: 0px;
+        border-right: 0px;
+    }
+    
+    nav .nav-links {
+        position: absolute;
+        padding: 0;
+        margin: 0;
+        left: -30%;
+        height: 92vh;
+        top: 8vh;
+        width: 30%;
+        background-color: var(--raised-color);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    nav .burger {
+        display: block;
+        cursor: pointer;
+    }
+}
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line2 {
+    opacity: 0;
+}
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}

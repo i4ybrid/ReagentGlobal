@@ -1,0 +1,100 @@
+@import url("base.css");
+
+.wrapper {
+    display: grid;
+    grid-template-areas: "nav" "content";
+    grid-template-columns: 200px 1fr;
+}
+
+nav {
+    background-color: darkred;
+    height: 100vh;
+}
+
+.content {
+    background-color: darkcyan;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    padding: 0.3rem;
+}
+
+nav li.nav-header {
+    display: block;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--font-color);
+    line-height: 1rem;
+    padding: 0.9rem;
+    padding-bottom: 2rem;
+    text-align: left;
+}
+
+nav li.active {
+    border-left: 6px solid var(--accent);
+    border-right: 6px solid var(--transparent-color);
+    position: relative;
+}
+
+nav li.active, nav li.active a {
+    color: var(--font-color);
+}
+
+nav li a {
+    display: block;
+    color: var(--inactive-color);
+    padding: 8px 16px;
+    text-decoration: none;
+}
+nav li a:hover {
+    color: var(--font-color);
+    transition: color ease 0.3s;
+}
+
+@media screen and (max-width: 800px) {
+    .wrapper {
+        grid-template-rows: 13px 1fr;
+        grid-template-areas: "nav content";
+    }
+
+    nav {
+        width: 100vw;
+    }
+    
+    nav ul {
+        overflow: hidden;
+        padding-bottom: 2rem;
+    }
+
+    nav li {
+        float: left;
+        margin-left: 1px;
+        margin-right: 1px;
+    }
+
+    nav li.nav-header {
+        display: block;
+        font-size: 1.4rem;
+        font-weight: 600;
+        width: 180px;
+        color: var(--font-color);
+        line-height: 1rem;
+        padding: 0.9rem;
+        padding-right: 1.2rem;
+        text-align: left;
+    }
+
+    nav li.active {
+        border-top: 0px;
+        border-bottom: 3px solid var(--accent);
+        border-left: 0px;
+        border-right: 0px;
+    }
+}
+
