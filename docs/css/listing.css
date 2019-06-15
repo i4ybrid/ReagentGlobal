@@ -1,0 +1,26 @@
+.listing-data {
+    padding: 0.5rem;
+}
+.listing-data table {
+    width: 100%;
+}
+.listing-data td {
+    border-top: 1px;
+    font-family: 'Cousine';
+    border-bottom-color: var(--border-color);
+    padding: 1px;
+}
+.listing-data td:nth-child(1) {
+    width: 180px;
+}
+
+.listing-data th {
+    background-color: var(--accent);
+    text-align: center;
+}
+.listing-data tr:nth-child(odd) {
+    background-color: #dddddd;
+}
+.listing-data tr:nth-child(even) {
+    background-color: #eeeeee;
+}
