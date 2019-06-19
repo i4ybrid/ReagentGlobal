@@ -1,0 +1,15 @@
+{
+  "name": "email-app",
+  "version": "1.0.0",
+  "description": "Used to generate e-mails and to manage the list of e-mails, and to manage all listings as well as communicate with the database",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "e-mail",
+    "email"
+  ],
+  "author": "Eric Hu",
+  "license": "ISC"
+}

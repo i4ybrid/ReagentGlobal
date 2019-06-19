@@ -1,0 +1,9 @@
+{
+    "database": {
+        "type": "mongodb",
+        "url": "@ds239797.mlab.com:39797/reagent-global",
+        "protocol-prefix": "mongodb://",
+        "username": "reagent-global",
+        "password": "!_gL0b4lAg3n+z"
+    }
+}
