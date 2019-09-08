@@ -1,6 +1,6 @@
-# email-app
+# feathers-test
 
-> Takes e-mails and generates e-mails sometimes
+> 
 
 ## About
 
@@ -14,7 +14,7 @@ Getting up and running is as easy as 1, 2, 3.
 2. Install your dependencies
 
     ```
-    cd path/to/email-app; npm install
+    cd path/to/feathers-test; npm install
     ```
 
 3. Start your app
