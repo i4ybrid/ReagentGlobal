@@ -1,0 +1,29 @@
+{
+    "id": "reagent-global-user",
+    "description": "Schema for user",
+    "type": "object",
+
+    "properties": {
+        "id": {
+            "description": "unique identifier for this user",
+            "type": "string"
+        },
+        "username": {
+            "description": "username",
+            "type": "string"
+        },
+        "password": {
+            "description": "one-way hashed password",
+            "type": "string"
+        },
+        "email": {
+            "description": "e-mail of the user",
+            "type": "string"
+        },
+        "dateCreated": {
+            "description": "date user was created, format is yyyy-MM-dd HH:mm:ss",
+            "type": "string",
+            "format": "date-time"
+        }
+    }
+}

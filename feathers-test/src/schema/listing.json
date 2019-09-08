@@ -1,0 +1,74 @@
+{
+    "id": "reagent-global-listing",
+    "description": "Schema for a real estate listing",
+    "type": "object",
+
+    "properties": {
+        "id": {
+            "description": "unique identifier for this listing",
+            "type": "string"
+        },
+        "title": {
+            "description": "title to be displayed at the top of the listing",
+            "type": "string"
+        },
+        "description": {
+            "description": "a long paragraphed text of a description of the listing",
+            "type": "string"
+        },
+        "images": {
+            "type": "array",
+            "items": { "$ref": "#/definitions/image" }
+        },
+        "references": {
+            "type": "array",
+            "items": { "$ref": "#/definitions/reference" }
+        },
+        "price": {
+            "description": "price of the property",
+            "type": "number"
+        },
+        "currency": {
+            "description": "three character code of currency",
+            "type": "string",
+            "enum": ["USD", "CNY", "JPY", "EUR", "GBP", "CAD", "MXN"]
+        },
+        "dateListed": {
+            "description": "date the property was listed, format is yyyy-MM-dd HH:mm:ss",
+            "type": "string",
+            "format": "date-time"
+        }
+    },
+    "definitions": {
+        "image": {
+            "type": "object",
+            "properties": {
+                "url": {
+                    "description": "relative URL for the image",
+                    "type": "string"
+                },
+                "description": {
+                    "description": "a description of the image, could be used for the hover-over",
+                    "type": "string"
+                }
+            }
+        },
+        "reference": {
+            "type": "object",
+            "properties": {
+                "key": {
+                    "description": "key of the field",
+                    "type": "string"
+                },
+                "display": {
+                    "description": "display text of the field's key",
+                    "type": "string"
+                },
+                "value": {
+                    "description": "the value of the reference",
+                    "type": "string"
+                }
+            }
+        }
+    }
+}

@@ -5,5 +5,30 @@
   "paginate": {
     "default": 10,
     "max": 50
+  },
+  "mongodb": "mongodb://reagent-global:password123@ds239797.mlab.com:39797/reagent-global",
+  "authentication": {
+    "secret": "1fbc194066f1971429ea7fd631a702d9a611bb67a741deaa8727811c2e98fb5dab9a5d6c26843c6ff79cbe458fb5474a4fdea00ba265176c55a04fd7594281ab05a4b8530850235e7601bdb3e143747d1233b02b43889afd8bc0ae2b9f55372ef452b16821bb4097351e78509f65842938d052539f2cc129d20eb4737bce141f6ab098333e8c5160842ac6cebb0177e0add943237e552a0631afb9cfa774b1fb86c50fea93c658a96cbea75be60bd138bece3201e0acee0b4e0f35e051f8cced6c890908de3077691a9f07e08d43579faf1b55bbb61aa6ea340e230ed1dd5ff6588b4ae0420170a1a9e5753c05ecd1ebdf63278fa9cdff645e3f8d13307d7f8e",
+    "strategies": [
+      "jwt",
+      "local"
+    ],
+    "path": "/authentication",
+    "service": "auth",
+    "jwt": {
+      "header": {
+        "typ": "access"
+      },
+      "audience": "https://yourdomain.com",
+      "subject": "anonymous",
+      "issuer": "feathers",
+      "algorithm": "HS256",
+      "expiresIn": "1d"
+    },
+    "local": {
+      "entity": "user",
+      "usernameField": "email",
+      "passwordField": "password"
+    }
   }
 }
